@@ -1,8 +1,17 @@
 {
   "name": "object-factory",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "Build/share/create reusable factories",
   "main": "factory.js",
+  "bin": {
+    "object-factory-viewer": "./bin/object-factory-viewer" 
+  },
+  "keywords": [
+    "factory girl",
+    "factory",
+    "fixture",
+    "object fixture"
+  ],
   "scripts": {
     "test": "make test"
   },
