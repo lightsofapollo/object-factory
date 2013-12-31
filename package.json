@@ -6,6 +6,10 @@
   "bin": {
     "object-factory-viewer": "./bin/object-factory-viewer"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lightsofapollo/object-factory"
+  },
   "keywords": [
     "factory girl",
     "factory",
