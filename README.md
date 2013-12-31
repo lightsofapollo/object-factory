@@ -13,7 +13,13 @@ var Factory = require('object-factory');
 ## Basic task syntax
 
 ```js
-var Event = new Factory({
+function Event(props) {
+  this.title = props.title;
+  this.location = props.location;
+}
+
+var EventFactory = new Factory({
+  object: Event
   properties: {
     // define defaults
     title: 'Amazing Event',
@@ -21,7 +27,17 @@ var Event = new Factory({
   }
 });
 
-var event = Event.build({ title: 'xxx' });
+// create an object with the attributes of the factory but not an
+// instance of the Event class
+var event = EventFactory.build({ 
+  title: 'xxx' 
+});
+
+// Create an instance of the event class
+var event = EventFactory.create({ 
+  title: 'xxx' 
+});
+
 ```
 
 ## Options for factories
